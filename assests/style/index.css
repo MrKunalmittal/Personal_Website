@@ -67,6 +67,10 @@ nav ul li+li {
 }
 /* ------------------------------- */
 /* ---------Section--------------- */
+.container {
+    width: min(100% - 30px, 1080px);
+    margin-inline: auto;
+}
 .banner {
     background: url(../img/background.png) center center / cover no-repeat;
     height: 100vh;
@@ -84,14 +88,22 @@ nav ul li+li {
 
 .banner-text {
     font-size: 20px;
-    font-weight: 300;
+    font-weight: 500;
     font-family: 'Roboto', sans-serif;
 }
-
-.container {
-    width: min(100% - 30px, 1080px);
-    margin-inline: auto;
+.banner-text p , .banner-text button{
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: all 0.4s ease-in-out;
 }
+.banner-text p.is-visible , button.is-visible{
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0px);
+} 
+
+
 
 section.hero-banner {
     height: 100vh;
@@ -104,12 +116,13 @@ section.hero-banner {
     border: 1px solid blue;
     border-radius: 50px;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 26px 30px -10px, rgba(0, 0, 0, 0.1) 0px 16px 10px -10px;
-    font-size: 12px;
+    font-size: 18px;
     font-weight: 600;
     letter-spacing: 0.3px;
     transition: all 0.3s ease-in-out;
     color: #fff;
     cursor: pointer;
+    margin-top: 20px;
 
 }
 
@@ -142,7 +155,7 @@ div .icons ul li {
 }
 
 div .icons ul li a {
-    font-size: 17px;
+    font-size: 19px;
     font-weight: 600;
     text-decoration: none;
     letter-spacing: 0.2px;
@@ -160,7 +173,7 @@ div .icons ul li a {
     margin-left: 18px;
 }
 
-.fb {
+.github {
 color:  #000000 ;
 }
 
