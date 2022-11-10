@@ -8,11 +8,15 @@
 /* ---------------------------------- */
 /* -------Header -------------------- */
 body {
-    background-color: #f1f2f3;
+    background-color: #f1f2f3; 
+    /* background-color: #8EC5FC;
+    background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%); */
 }
 header {
     height: 56px;
     background-color: #fff;
+    background-color: #8EC5FC;
+    background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
 }
 
 .flexbox {
@@ -25,7 +29,7 @@ header {
 }
 
 .title h1 {
-    font-size: 18px;
+    font-size: 30px;
     font-weight: 550;
     line-height: 56px;
     font-family: "Roboto", sans-serif;
@@ -72,7 +76,7 @@ nav ul li+li {
     margin-inline: auto;
 }
 .banner {
-    background: url(../img/background.png) center center / cover no-repeat;
+    background: url(../img/head.jpg) center center / cover no-repeat;
     height: 100vh;
     color: #fff;
 }
@@ -90,6 +94,10 @@ nav ul li+li {
     font-size: 20px;
     font-weight: 500;
     font-family: 'Roboto', sans-serif;
+}
+.banner-text h2 {
+    font-weight: 900;
+    font-size: 60px;
 }
 .banner-text p , .banner-text button{
     visibility: hidden;
@@ -109,12 +117,12 @@ section.hero-banner {
     height: 100vh;
 }
 .banner-text button {
-    width: 80px;
-    height: 40px;
+    width: 100px;
+    height: 50px;
     text-align: center;
     background-color: blue;
     border: 1px solid blue;
-    border-radius: 50px;
+    border-radius: 25px;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 26px 30px -10px, rgba(0, 0, 0, 0.1) 0px 16px 10px -10px;
     font-size: 18px;
     font-weight: 600;
@@ -133,17 +141,24 @@ section{
     height: min-content(100% - 56px - 56px);
     display: grid;
     align-items: center;
-    padding: 50px 0;
+    /* padding: 50px 0; */
 }
 .image h2{
     text-align: center;
     font-size: 40px;
+    color: #f1f2f3;
+    margin-top: 50px;
+    /* background-color: #000; */
 }
  .image img{ 
     text-align: center;
     margin: 0 auto;
-    width: 60px;
+    /* width: auto;
+    height: auto; */
     
+} 
+ .image{
+    background-color: #000;
 } 
 .about > .image{
     /* align-items: justify; */
@@ -160,12 +175,13 @@ section{
     line-height: 40px;
     width: 20%;
     border-radius: 6px;
-    background-color:#7a53d4;
+    background-color:blue;
     margin-top: 40px;
     cursor: pointer;
     align-items: center;
     display: grid;
     margin: auto;
+    margin-bottom: 30px;
 
 }
 .link a:hover{
@@ -181,6 +197,101 @@ p + p{
     margin-top: 5px;
 }
 
+/* --------------------------------------- */
+/* ---------Section-about me-------------- */
+
+.contact-me{
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #95c6d9;
+   height: 40vh;
+    flex-direction: row;
+    
+}
+.contact {
+    display: grid;
+    text-align: center;
+    place-items: center;
+    
+}
+.contact > h2 {
+    text-align: center;
+    font-size: 40px;
+    
+}
+.contact > p {
+    font-size: 25px;
+}
+ 
+div.accounts {
+    display: flex;
+    text-align: center;
+    place-items: center;
+    justify-content: center;
+    
+}
+div.accounts ul {
+    list-style: none;
+}
+
+div.accounts ul li {
+    display: inline;
+    line-height: 66px;
+    cursor: default;
+}
+
+div.accounts ul li a {
+    font-size: 19px;
+    font-weight: 600;
+    text-decoration: none;
+    letter-spacing: 0.2px;
+    cursor: pointer;
+    font-family: "Roboto", sans-serif;
+}
+
+.accounts li {
+    border: 1px solid;
+    border-radius: 50%;
+    padding: 6px;
+    height: 30px;
+    width: 30px;
+
+}
+
+.accounts ul li+li {
+    margin-left: 18px;
+}
+
+.github {
+color:  #000000 ;
+}
+.github:hover{
+    color: #fff;
+}
+
+.email{
+color:  #00acee ;
+}
+.email:hover{
+    color: darkblue;
+}
+
+.youtube {
+color: 	#f42b2b;
+}
+.youtube:hover{
+    color: black;
+}
+.insta {
+    color: 	#da6679;
+}
+ .insta:hover{
+     color:orangered;
+}
+
+
 /* -------------------------------- */
 /* ------- Footer ------------------ */
 .flexbox {
@@ -190,6 +301,8 @@ p + p{
 footer {
     height: 65px;
     background-color: #fff;
+    background-color: #8EC5FC;
+    background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
 }
 
 div .icons {
@@ -229,13 +342,22 @@ div .icons ul li a {
 .github {
 color:  #000000 ;
 }
+.github:hover{
+    color: #fff;
+}
 
 .twitter{
 color:  #00acee ;
 }
+.twitter:hover{
+    color: #00acee;
+}
 
-.google {
-color: 	#4285F4;
+.youtube {
+color: 	#f42b2b;
+}
+.youtube:hover{
+    color: #f42b2b;
 }
 
 .copy {

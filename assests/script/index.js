@@ -11,7 +11,7 @@ function select(selector, parent = document) {
 }
 
 const content = [
-    'Hello, World. I\'m Kunal Mittal, a Full-Stack developer and student based in Winnipeg',
+    'A Full-Stack developer and student based in Winnipeg',
  
     'I am originally from India',
     'I have completed my graduation from India'
@@ -28,7 +28,7 @@ window.addEventListener('load', () => {
     }, 1000);
 
     onEvent('click', bioButton, function() {
-        bioButton.innerText = (n === 1) ? 'Again' : 'More';
+        bioButton.innerText = (n === 1) ? 'Again !' : 'More';
 
         if(n === 2) {
             bioParagraph.innerText = content[n=0];
