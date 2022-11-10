@@ -1,0 +1,188 @@
+@import "./reset.css";
+
+.container {
+    width: min(100% - 30px, 1280px);
+    margin-inline: auto;
+}
+
+/* ---------------------------------- */
+/* -------Header -------------------- */
+body {
+    background-color: #f1f2f3;
+}
+header {
+    height: 56px;
+    background-color: #fff;
+}
+
+.flexbox {
+    display: flex;
+}
+
+.title {
+    width: 40%;
+    height: 56%;
+}
+
+.title h1 {
+    font-size: 18px;
+    font-weight: 550;
+    line-height: 56px;
+    font-family: "Roboto", sans-serif;
+    color: rgb(10, 10, 10);
+    letter-spacing: 0.2px;
+}
+
+nav {
+    width: 60%;
+    text-align: right;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    line-height: 56px;
+    cursor: default;
+}
+
+nav ul li a {
+    font-size: 17px;
+    color: rgb(3, 3, 3);
+    font-weight: 525;
+    text-decoration: none;
+    letter-spacing: 0.2px;
+    cursor: pointer;
+    font-family: Madefor, Helvetica Neue, Helvetica, Arial, Hiragino Kaku Gothic Pro W3, Hiragino Kaku Gothic Pro, sans-serif !important;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+nav ul li+li {
+    margin-left: 18px;
+}
+/* ------------------------------- */
+/* ---------Section--------------- */
+.banner {
+    background: url(../img/background.png) center center / cover no-repeat;
+    height: 100vh;
+    color: #fff;
+}
+
+.overlay {
+    min-height: 100vh;
+    background-color: rgb(20 24 28/0.4);
+    text-align: center;
+    display: grid;
+    align-items: center;
+    flex-direction: column;
+}
+
+.banner-text {
+    font-size: 20px;
+    font-weight: 300;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    width: min(100% - 30px, 1080px);
+    margin-inline: auto;
+}
+
+section.hero-banner {
+    height: 100vh;
+}
+.banner-text button {
+    width: 80px;
+    height: 40px;
+    text-align: center;
+    background-color: blue;
+    border: 1px solid blue;
+    border-radius: 50px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 26px 30px -10px, rgba(0, 0, 0, 0.1) 0px 16px 10px -10px;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+    transition: all 0.3s ease-in-out;
+    color: #fff;
+    cursor: pointer;
+
+}
+
+
+
+/* -------------------------------- */
+/* ------- Footer ------------------ */
+.flexbox {
+    display: flex;
+}
+
+footer {
+    height: 65px;
+    background-color: #fff;
+}
+
+div .icons {
+    width: 50%;
+    text-align: left;
+}
+
+div .icons ul {
+    list-style: none;
+}
+
+div .icons ul li {
+    display: inline;
+    line-height: 66px;
+    cursor: default;
+}
+
+div .icons ul li a {
+    font-size: 17px;
+    font-weight: 600;
+    text-decoration: none;
+    letter-spacing: 0.2px;
+    cursor: pointer;
+    font-family: "Roboto", sans-serif;
+}
+
+.icons li {
+    border: 1px solid;
+    border-radius: 50%;
+    padding: 6px;
+}
+
+.icons ul li+li {
+    margin-left: 18px;
+}
+
+.fb {
+color:  #000000 ;
+}
+
+.twitter{
+color:  #00acee ;
+}
+
+.google {
+color: 	#4285F4;
+}
+
+.copy {
+    width: 50%;
+    height: 56%;
+}
+
+.copy p {
+    font-size: 17px;
+    text-align: right;
+    font-family: "Roboto", sans-serif;
+    font-weight: 450;
+    line-height: 66px;
+    color: #000;
+    letter-spacing: 0.2px;
+}
